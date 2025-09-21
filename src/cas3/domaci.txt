@@ -1,0 +1,42 @@
+// "props" su svojstva (properties) koja prosleđujemo iz komponente App u ovu komponentu 
+// Možemo ih posmatrati kao objekat koji sadrži vrednosti koje šaljemo 
+// Dakle, props = { name: "ajsa", age: 21 } // 1. verzija sa props // function UserCard(props) { 
+// return ( // <div> // <h1>{props.name}</h1> // props.name pristupa vrednosti "name" iz prosleđenog objekta 
+// <p>{props.age}</p> // props.age pristupa vrednosti "age" iz prosleđenog objekta // </div> // ); // } 
+// shorter version – destrukturiranje props-a direktno u parametru funkcije
+// Umesto props.name i props.age, odmah izvlacimo { name, age } iz objekta
+
+
+Zadatak 1 – Osnovni props
+
+Napravi komponentu Car koja prima props: brand i year.
+Prikaži ih u <h2> i <p>.
+👉 U App.jsx prosledi bar 2 različita auta.
+
+Zadatak 2 – Više props-a
+
+Napravi komponentu Book koja prima title, author, i year.
+Prikaži sve te vrednosti u okviru <div>.
+👉 Iz App.jsx prikaži 3 knjige sa različitim vrednostima.
+
+Zadatak 3 – Props + stilovi
+
+Napravi komponentu Button koja prima props: text i color.
+Prikaži <button> element gde se boja pozadine menja na osnovu prosleđenog props-a.
+👉 Probaj da napraviš crveno, zeleno i plavo dugme.
+
+Zadatak 4 – Destrukturiranje
+
+Napravi komponentu Profile koja prima props: name, age, isStudent.
+Koristi destrukturiranje u parametru funkcije da prikažeš podatke.
+👉 Ako je isStudent = true, ispiši “Student”, inače “Nije student”.
+
+Zadatak 5 – Props kao objekat
+
+Napravi komponentu MovieCard koja prima ceo objekat preko props-a, npr:
+
+const movie = { title: "Inception", year: 2010, rating: 8.8 };
+<MovieCard movie={movie} />
+
+
+👉 U komponenti prikaži movie.title, movie.year i movie.rating.
