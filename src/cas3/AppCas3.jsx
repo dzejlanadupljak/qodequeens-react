@@ -6,6 +6,7 @@ function AppCas3(){
     return(
         <div className='box'>
              <Student name="amina" godine={20} isStudent={false}/> 
+            
         </div>
     )
 }

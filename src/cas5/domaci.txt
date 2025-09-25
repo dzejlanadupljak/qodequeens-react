@@ -1,0 +1,57 @@
+Zadatak 2 – StatusMessage
+
+Props: status → status (loading, error, success, ili neki drugi`)
+
+State: currentStatus → trenutno stanje statusa (može se menjati unutar komponente)
+
+loading → „Učitavanje…“
+
+error → „Došlo je do greške“ (crveno)
+
+success → „Uspešno učitano“ (zeleno)
+
+Ostalo → „Nepoznat status“
+
+Dugme može da menja status (menja state)
+
+
+
+Zadatak 3 – ShippingInfo
+
+Props: isMember, totalPrice
+
+State: price → lokalno stanje ukupne cene (ako želimo dinamičku promenu)
+
+Ako je član i ukupna cena > 500 → „Besplatna dostava“
+
+Inače → „Dostava se plaća 300 dinara“
+
+Zadatak 4 – Notification
+
+Props: type, message
+
+State: currentType → trenutno stanje tipa poruke
+
+error → crveno
+
+warning → narandžasto
+
+info → plavo
+
+Ostalo → „Nepoznata poruka“
+
+Dugme može da menja tip poruke (menja state)
+
+
+
+Zadatak 5 – ProfileCard
+
+Props: name, age, hobbies
+
+State: hobbiesState → lokalna kopija hobija koju možemo menjati
+
+Ako nema hobija → „Nema hobija“
+
+Ako više od 3 hobija → „Previše hobija“
+
+Ako je stariji od 30 → dodatna poruka „Iskusan korisnik“
