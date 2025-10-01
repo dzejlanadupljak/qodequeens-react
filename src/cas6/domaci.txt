@@ -1,0 +1,19 @@
+Zadatak: Lista zadataka (To-Do List)
+
+Napravi komponentu koja:
+
+Ima state tasks koji je niz (npr. ["Learn React", "Do homework"]).
+
+Ima input polje i dugme.
+
+Kada korisnik unese novi zadatak i klikne dugme, zadatak se dodaje u niz i prikaže na ekranu.
+
+Dodaj validaciju:
+
+Ako je input prazan, prikaži poruku "Please enter a task".
+
+Ako zadatak već postoji, prikaži poruku "That task already exists!".
+
+Svaki zadatak u listi treba da ima i dugme "Remove" pored sebe.
+
+Kada korisnik klikne na dugme, taj zadatak se briše iz liste.
