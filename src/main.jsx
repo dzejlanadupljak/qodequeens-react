@@ -1,10 +1,10 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import AppCas6 from './cas6/AppCas6.jsx'
+import AppCas7 from './cas7/AppCas7.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <AppCas6 />
+    <AppCas7 />
   </StrictMode>,
 )

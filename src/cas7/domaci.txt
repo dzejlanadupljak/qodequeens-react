@@ -1,0 +1,35 @@
+Zadatak 1: Brojač glasova za kandidate
+
+Napravi komponentu gde imaš listu kandidata (npr. “Ajsa”, “Emin”, “Džejlana”).
+
+Pored svakog kandidata stoji dugme +1 glas.
+
+Klikom na dugme povećava se broj glasova tog kandidata.
+
+Na vrhu ispiši poruku: "Trenutno vodi: [ime kandidata]".
+ Hint: koristi niz objekata sa poljima { name, votes }, a zatim map za prikaz.
+
+
+🔹 Zadatak 2: Kalkulator prosečne ocene
+
+Napravite komponentu gde korisnik unosi ocene (1–5).
+
+Kada klikne Dodaj ocenu, ocena se ubacuje u listu.
+
+Na dnu se prikazuje prosek svih ocena.
+
+Ako korisnik unese broj van opsega (manji od 1 ili veći od 5), ispisuje se poruka "Ocena mora biti između 1 i 5!".
+ Hint: koristi reduce da izračunaš prosek.
+
+
+🔹 Zadatak 3: Kviz sa pitanjima
+
+Napravi komponentu gde:
+
+Imaš jedno pitanje i 3 ponuđena odgovora (npr. “Koja je prestonica Francuske?” sa ponudom: “Berlin”, “Madrid”, “Pariz”).
+
+Kada korisnik klikne na odgovor, proveri da li je tačan i ispiši poruku "Tačno!" ili "Netačno!".
+
+Dodaj mogućnost da prikažeš sledeće pitanje (možeš napraviti niz pitanja).
+
+ Hint: koristi useState da čuvaš trenutni index pitanja i poruku za odgovor.
