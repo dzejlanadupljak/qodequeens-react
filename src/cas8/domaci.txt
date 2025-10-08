@@ -1,0 +1,39 @@
+1. Detaljan opis zadatka:
+
+Na ekranu treba da se prikaže lista jela — npr:
+
+Pizza – 8€
+
+Burger – 6€
+
+Pasta – 7€
+
+Pored svakog jela nalazi se dugme „Dodaj u korpu“.
+
+Kada korisnik klikne na to dugme:
+
+Poveća se broj jela u korpi.
+
+Ukupna cena se sabira.
+
+Na vrhu ili desnoj strani ekrana treba da se vidi:
+
+ Broj jela u korpi
+
+ .
+
+2. Detaljan opis zadatka:
+
+Na ekranu se prikazuje slika (npr. neka fotografija) ili tekst (npr. „Danas je lep dan!“).
+
+Ispod su dva dugmeta:
+
+👍 Like
+
+👎 Dislike
+
+Kada korisnik klikne:
+
+Broj lajkova ili dislajkova se uveća za 1.
+
+Brojevi se prikazuju ispod slike ili pored dugmića.

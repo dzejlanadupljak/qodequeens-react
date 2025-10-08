@@ -40,8 +40,100 @@
 .read-the-docs {
   color: #888;
 } */
-.box{
+/* .box{
   width: 300px;
   height: 300px;
   background-color: aqua;
+} */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f5f6fa;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+h1 {
+  color: #6c63ff;
+  margin-bottom: 25px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+input {
+  width: 260px;
+  padding: 10px;
+  border: 2px solid #6c63ff;
+  border-radius: 8px;
+  outline: none;
+  font-size: 15px;
+}
+
+input:focus {
+  border-color: #4a44d6;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+button {
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: 500;
+}
+
+button:hover {
+  background-color: #4a44d6;
+}
+
+.reset-btn {
+  background-color: #e74c3c;
+}
+
+.reset-btn:hover {
+  background-color: #c0392b;
+}
+
+.profile-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  width: 280px;
+  margin: 0 auto;
+  animation: fadeIn 0.5s ease;
+}
+
+.profile-card h2 {
+  color: #6c63ff;
+  margin-bottom: 10px;
+}
+
+.profile-card p {
+  margin: 6px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
