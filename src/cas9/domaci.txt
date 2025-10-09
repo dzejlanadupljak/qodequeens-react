@@ -1,0 +1,20 @@
+1.Brojač klikova sa zvukom
+
+Napravite komponentu sa dugmetom Klikni me.
+
+Svaki klik povećava brojač.
+
+Kada brojač dostigne 5, reproducirajte zvuk (može biti neki online zvuk ili alert za jednostavnu verziju).
+
+Koristite useEffect da pratite kada brojač dostigne 5.
+
+
+2.Reakcija na boje
+
+Napravite komponentu koja prikazuje kvadrat.
+
+Kvadrat menja boju svaki put kada kliknete na njega.
+
+Boje treba da se biraju nasumično iz niza od 5 boja.
+
+Koristite useEffect da ispišete u konzolu: "Boja promenjena u <boja>".           

@@ -1,10 +1,18 @@
-import { useState } from "react";
-import "./App.css";
+import { useState, useEffect } from "react";
 
-function App() {
-<div>
-   <Forma />
-</div>
+function Counter() {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    console.log("Broj se promenio:", count);
+  }, [count]); // ← reaguje samo na promene count-a
+
+  return (
+    <div>
+      <p>Broj: {count}</p>
+      <button onClick={() => setCount(count + 1)}>Povećaj</button>
+    </div>
+  );
 }
 
-export default App;
+export default Counter;
