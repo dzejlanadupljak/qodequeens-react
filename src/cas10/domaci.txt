@@ -1,0 +1,20 @@
+Zadatak – Status prijave
+Kreiraj UserContext pomoću createContext().
+
+U App komponenti definiši user stanje, npr.
+
+Prosledi user i setUser kroz UserContext.Provider.
+
+Napravi komponentu LoginButton:
+
+Ako korisnik nije ulogovan → prikaži dugme „Uloguj se“
+
+Ako jeste → prikaži „Odjavi se“
+
+Klik menja loggedIn stanje.
+
+Napravi komponentu UserInfo koja prikazuje poruku:
+
+„Dobrodošla, Džejlana!“ ako je ulogovana
+
+„Nisi prijavljena“ ako nije.
