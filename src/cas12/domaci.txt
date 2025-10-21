@@ -1,0 +1,10 @@
+Početna, O nama, Kursevi i Kontakt.
+
+Na početnoj stranici treba da se nalazi kratka poruka dobrodošlice i objašnjenje o čemu je sajt.
+Na stranici „O nama“ napišite nekoliko rečenica o zamišljenoj školi, timu ili organizaciji koja drži IT kurseve.
+Na stranici „Kursevi“ prikažite listu nekoliko kurseva (na primer: React, JavaScript, HTML, CSS),
+sa osnovnim informacijama kao što su trajanje i nivo kursa.
+Na stranici „Kontakt“ napišite kontakt email adresu i kratku poruku, kao da ste prava škola kojoj neko može da se javi.
+
+U glavnoj komponenti aplikacije treba da postoji navigacioni meni sa linkovima ka svim stranicama. 
+Kada korisnik klikne na bilo koji link, treba da se promeni stranica bez ponovnog učitavanja aplikacije.
