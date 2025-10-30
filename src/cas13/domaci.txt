@@ -1,0 +1,49 @@
+Zadatak: „Cooking Timer App”
+🥘 Opis:
+
+Napraviti malu aplikaciju koja prikazuje listu recepata.
+Kada klikneš na neki recept, otvori se nova stranica (putem rute sa parametrom)
+gde se prikazuju detalji recepta i tajmer za kuvanje (npr. odbrojava vreme pripreme).
+
+🔹 Struktura komponenti:
+
+App.js
+
+Sadrži BrowserRouter, Routes, i Link do /recipes.
+
+Rute:
+
+/recipes → prikazuje listu recepata (RecipeList)
+
+/recipes/:id → prikazuje detalje određenog recepta (RecipeDetails)
+
+RecipeList.js
+
+Sadrži niz recepata (npr. id, name, time).
+
+Prikazuje listu <Link> elemenata — svaki vodi do /recipes/:id.
+
+RecipeDetails.js
+
+Uzima id iz URL-a pomoću useParams.
+
+Pronalazi odgovarajući recept.
+
+Prikazuje ime, vreme pripreme i tajmer koji odbrojava (koristiš useState, useEffect).
+
+Dugmad: Start, Stop, Reset.
+
+🔹 Funkcionalnosti koje treba da imaš:
+
+ Navigacija između stranica pomoću Link i Route.
+ Korišćenje useParams() za prikaz detalja recepta.
+ U RecipeDetails komponenti dodaj timer koji:
+
+Odbrojava svaku sekundu (kao tvoj SimpleTimer)
+
+Može da se pokrene, zaustavi i resetuje.
+
+Ideja:
+
+Kada klikneš na “Cake”, otvori se ruta /recipes/3
+tu se vidi naziv, opis i tajmer koji možeš da pokreneš dok se „kolač peče“.
