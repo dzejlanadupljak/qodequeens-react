@@ -1,0 +1,9 @@
+Napiši React komponentu koja:
+
+Ima state tema sa vrednošću "light" ili "dark".
+
+Napravi funkciju promeniTemu koristeći useCallback, koja menja temu na suprotnu.
+
+Napravi komponentu ThemeButton u React.memo, kojoj prosleđuješ promeniTemu.
+
+Klikom na dugme menja se tema.
