@@ -64,37 +64,5 @@ export default FilterProducts;
 
 
 
-// // React.memo → sprečava ponovno renderovanje Button komponente
-// // osim ako se promeni props (ovde: onClick)
-// const Button = React.memo(({ onClick }) => {
-//     console.log("button rendered"); // vidi se kad se dugme ponovo crta
 
-//     return <button onClick={onClick}>Click</button>;
-// });
 
-// function Parent() {
-//     console.log("parent rendered"); // prikazuje se svaki put kada Parent renderuje
-
-//     const [count, setCount] = useState(0); // state brojanja
-
-//     // useCallback → funkcija ostaje ista između rendera
-//     // Ne kreira se nova funkcija pri svakom renderu
-//     const handelClick = useCallback(() => {
-//         console.log("klik");
-//     }, []);
-
-//     return (
-//         <div>
-//             {/* prikazuje trenutni count */}
-//             <p>count: {count}</p>
-
-//             {/* povećava count → uzrokuje render Parent-a */}
-//             <button onClick={() => setCount(count + 1)}>increment</button>
-
-//             {/* Button se ne renderuje ponovo jer je onClick ista funkcija (zahvaljujući useCallback) */}
-//             <Button onClick={handelClick} />
-//         </div>
-//     );
-// }
-
-// export default Parent;
