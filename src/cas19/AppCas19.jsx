@@ -1,96 +1,49 @@
-import { createContext,useContext,useState } from "react";
+import React from "react";
+import { BrowserRouter, Routes, Route, Outlet, Navigate, Link } from "react-router-dom";
 
-export const Language=createContext()
-
-function App(){
-
-    const [lang,setLang]=useState("sr")
-    const [page,setPage]=useState("home")
-
-    return(
-        <Language.Provider value={{lang,setLang}}>
-            <div>
-                <button onClick={()=>setPage("home")}>home</button>
-                <button onClick={()=>setPage("about")}>about</button>
-                <button onClick={()=>setPage("contact")}>contact</button>
-                <hr />
-<button onClick={()=>setLang(lang==="sr"?"en":"sr")}>
-    {lang=== "sr"?"promeni  u eng":"switch to sr"}
-</button>
-<hr />
-
-{page==="home" && <Home/>}
-{page==="about" && <About/>}
-{page==="contact" && <Contact/>}
-   </div>
-        </Language.Provider>
-    )
-}
-
-function Home(){
-const {lang}=useContext(Language)
-const tekst={ sr:{
-        naslov:"naslov na srpskom",
-        opis:"opis na srpskom"
-    },
-en:{
-    naslov:"title ",
-    opis:"description"
-},}
-return(
-    <div>
-        <h1>{tekst[lang].naslov}</h1>
-        <p>{tekst[lang].opis}</p>
-    </div>
-)
-
-
-
-}
-function About(){
-    const {lang}=useContext(Language)
-    const tekst={ sr:{
-            naslov:"o nama",
-            opis:"ovo je stranica o nama"
-        },
-    en:{
-        naslov:"about ",
-        opis:"description"
-    },}
+const Home=()=>{
     return(
         <div>
-            <h1>{tekst[lang].naslov}</h1>
-            <p>{tekst[lang].opis}</p>
+            <h1>pocetna</h1>
+                <nav>
+                    <Link to="about">o nama</Link>
+                    <Link to="constact">kontakt</Link>
+                    <Link to="/dashboard">DASHBOARD</Link>
+                </nav>
+            <hr />
+            <Outlet/>
+            
         </div>
     )
-    
-    
-    
-    }
+}
 
-    function Contact(){
-        const {lang}=useContext(Language)
-        const tekst={ sr:{
-                naslov:"kontakt",
-                opis:"ovo je stranica o nama"
-            },
-        en:{
-            naslov:"contact ",
-            opis:"description"
-        },}
-        return(
-            <div>
-                <h1>{tekst[lang].naslov}</h1>
-                <p>{tekst[lang].opis}</p>
-            </div>
-        )
-        
-        
-        
-        }
-    
+const About=()=><p>o nama</p>
+const Contact=()=><p>kontakt</p>
 
+const ProtectedRoute=()=>{
+    const isAuthenticated=localStorage.getItem("isAuthenticated")
+    return isAuthenticated ? <Outlet/> : <p>nema pristipa</p>
+}
 
+const Dashboard=()=><p>(zasticeno)</p>
 
+export default function App(){
+    return(
+        <BrowserRouter>
+        <Routes>
+        <Route path="/" element={<Navigate to="/home" />} />
 
-export default App
+<Route path="/home" element={<Home/>}>
+
+<Route index element={<p>Dobrodošli na početnu stranu!</p>} />
+          <Route path="about" element={<About />} />
+          <Route path="contact" element={<Contact />} />
+</Route>
+<Route path="/dashboard" element={<ProtectedRoute />}>
+          <Route index element={<Dashboard />} />
+        </Route>
+
+        </Routes>
+        </BrowserRouter>
+    )
+}
